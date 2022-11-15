@@ -19,13 +19,15 @@ console.log(risultato)
 // Creare una funzione per capire se la parola inserita è palindroma
 function palindroma(parolaUtente){
 
-    if(parolaUtente === mioArray.reverse()){
+    if(parolaUtente == mioArray.reverse()){
 
-        output = "palindroma"
+        return "palindroma"
+
     }else{
-        output = "non palindorma"
+
+        return "non palindorma"
 
     }
 
-    return risultato;
+
 }
