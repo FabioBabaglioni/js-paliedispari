@@ -4,18 +4,27 @@
 // Chiedere all’utente di inserire una parola
 let parolaUtente = prompt("Inserisci una parola");
 
-const risultato = palindroma
+// creare un array da poter revertare
+let mioArray = []
+
+mioArray.push(parolaUtente)
+
+console.log(mioArray)
+
+let risultato = palindroma(parolaUtente)
 
 console.log(risultato)
 
 
 // Creare una funzione per capire se la parola inserita è palindroma
-function palindroma(){
-    if(parolaUtente === parolaUtente.reverse()){
+function palindroma(parolaUtente){
+
+    if(parolaUtente === mioArray.reverse()){
 
         output = "palindroma"
     }else{
         output = "non palindorma"
+
     }
 
     return risultato;
